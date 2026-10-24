@@ -62,7 +62,52 @@
 
     <!-- Main content -->
     <main>
-        
+   
+<div class="contact-layout">
+
+    <aside class="enrollment-notice" aria-labelledby="enrollment-heading">
+        <h2 id="enrollment-heading">
+            Medicare Open Enrollment Is Here
+        </h2>
+
+        <p>(October 15 – December 7)</p>
+
+        <p>
+            <strong>Need help comparing Medicare health or drug plans?</strong>
+            Visit our Open Enrollment resource page for tools,
+            resources, and information to help you review your options.
+        </p>
+
+       
+<a
+    class="enrollment-link"
+    href="https://www.shiphelp.org/open-enrollment/"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    Explore Open Enrollment Resources <br>(opens in new tab)
+</a>
+
+<p>
+    <strong>
+        Open Enrollment is the busiest time of year
+        for SHIPs nationwide.
+    </strong>
+    Appointment availability and response times may be
+    longer than usual.
+</p>
+
+<p>
+    You may also contact
+    <a href="tel:18006334227">1-800-MEDICARE</a>
+    (1-800-633-4227), available 24 hours a day,
+    7 days a week, for Medicare information and assistance.
+</p>
+
+    </aside>
+
+    <div class="contact-panel">
+     
 <p id="decision-intro">
     Answer a few questions to find the right assistance
     or contact the SHIP TA Center.
@@ -127,6 +172,19 @@
 <section id="contact-form-section" hidden>
 
     <form id="contact-form" novalidate>
+        
+<div
+    id="form-error-summary"
+    class="form-error-summary"
+    tabindex="-1"
+    hidden
+>
+    <h3 id="error-summary-heading">
+        Please correct the following fields:
+    </h3>
+    <ul id="error-summary-list"></ul>
+</div>
+
 
         <p>Fields marked with * are required.</p>
 
@@ -273,17 +331,20 @@
     ← Back
 </button>
 
+   
     </section>
 
-</section>
+    </section>
 
-    </main>
+    </div> <!-- Closes contact-panel -->
 
-    <footer>
-        <!-- Website footer will go here -->
-    </footer>
+</div> <!-- Closes contact-layout -->
 
-</body>
+</main>
+
+<footer>
+    <!-- Website footer will go here -->
+</footer>
 
 </body>
 </html>

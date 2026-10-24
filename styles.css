@@ -407,3 +407,87 @@ p {
     background-color: var(--ship-blue);
     border-color: var(--ship-blue);
 }
+
+/* Contact page two-column layout */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 45fr 55fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.enrollment-notice {
+    background-color: #f1eafb;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.contact-panel {
+    border: 2px solid #c8b9e8;
+    border-radius: 12px;
+    padding: 28px;
+    min-width: 0;
+}
+
+.enrollment-notice h2 {
+    margin-top: 0;
+}
+
+/* Open Enrollment resource link */
+.enrollment-link {
+    display: inline-block;
+    background-color: #7548e8;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 8px 0 16px;
+}
+
+.enrollment-link:hover {
+    background-color: #5d35c5;
+}
+
+.enrollment-link:focus-visible {
+    outline: 3px solid var(--ship-dark-blue);
+    outline-offset: 4px;
+}
+
+/* Responsive contact page layout */
+@media (max-width: 800px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-panel {
+        order: 1;
+    }
+
+    .enrollment-notice {
+        order: 2;
+    }
+}
+
+/* Form validation summary */
+.form-error-summary {
+    border: 2px solid var(--error-color);
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+}
+
+.form-error-summary h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.form-error-summary ul {
+    margin-bottom: 0;
+    padding-left: 24px;
+}
+
+.form-error-summary a {
+    color: var(--ship-dark-blue);
+    text-decoration: underline;
+}

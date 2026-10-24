@@ -47,7 +47,8 @@ function hideResults() {
     contactFormSection.hidden = true;
     decisionIntro.hidden = false;
     submissionConfirmation.hidden = true;
-
+ 
+clearFormErrors();
 
 }
 
@@ -69,6 +70,30 @@ function clearFieldError(field, errorId) {
     field.removeAttribute("aria-invalid");
 }
 
+function clearFormErrors() {
+    const fields = [
+        ["contact-name", "name-error"],
+        ["contact-email", "email-error"],
+        ["contact-state", "state-error"],
+        ["contact-question", "question-error"]
+    ];
+
+    fields.forEach(([fieldId, errorId]) => {
+        const field = document.getElementById(fieldId);
+        clearFieldError(field, errorId);
+    });
+
+    const errorSummary = document.getElementById(
+        "form-error-summary"
+    );
+
+    errorSummary.hidden = true;
+
+    document.getElementById(
+        "error-summary-list"
+    ).innerHTML = "";
+}
+
 
 function validateContactForm() {
     let isValid = true;
@@ -79,6 +104,13 @@ function validateContactForm() {
     const state = document.getElementById("contact-state");
     const question = document.getElementById("contact-question");
     
+const errorSummary = document.getElementById("form-error-summary");
+const errorSummaryList = document.getElementById("error-summary-list");
+
+errorSummaryList.innerHTML = "";
+errorSummary.hidden = true;
+
+    
 clearFieldError(name, "name-error");
 clearFieldError(email, "email-error");
 clearFieldError(state, "state-error");
@@ -88,6 +120,21 @@ clearFieldError(question, "question-error");
     function markInvalid(field, errorId, message) {
         showFieldError(field, errorId, message);
         isValid = false;
+        
+const listItem = document.createElement("li");
+const link = document.createElement("a");
+
+link.href = `#${field.id}`;
+link.textContent = message;
+
+link.addEventListener("click", (event) => {
+    event.preventDefault();
+    field.focus();
+});
+
+listItem.appendChild(link);
+errorSummaryList.appendChild(listItem);
+
 
         if (!firstInvalidField) {
             firstInvalidField = field;
@@ -112,9 +159,12 @@ clearFieldError(question, "question-error");
         markInvalid(question, "question-error", "Enter your question.");
     }
 
-    if (!isValid) {
-        firstInvalidField.focus();
-    }
+    
+if (!isValid) {
+    errorSummary.hidden = false;
+    errorSummary.focus();
+}
+
 
     return isValid;
 }
@@ -190,9 +240,9 @@ const backToTeam = document.getElementById("back-to-team");
 
 backButtons.forEach(button => {
     button.addEventListener("click", () => {
-        const returnToTeamQuestion =
-            currentAudience === "team" ||
-            !teamContact.hidden;
+       
+const returnToTeamQuestion = !teamContact.hidden;
+
 
         hideResults();
 
