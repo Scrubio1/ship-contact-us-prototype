@@ -285,8 +285,10 @@ const states = [
   "Virgin Islands",
   "Virginia",
   "Washington",
-  "West Virginia", "Wisconsin", "Wyoming",
-"Outside the United States"
+  "West Virginia",
+  "Wisconsin",
+  "Wyoming",
+  "Outside the United States",
 ];
 
 const stateDropdown = document.getElementById("contact-state");
@@ -306,6 +308,12 @@ contactForm.addEventListener("submit", (event) => {
   const isValid = validateContactForm();
 
   if (isValid) {
+    // PRODUCTION IMPLEMENTATION:
+    // Send validated form data to the server for delivery to info@shiphelp.org.
+    // Only display the confirmation after the server accepts the submission.
+    // Handle submission failures without losing the visitor's entered information.
+    // See README.md for email notification requirements.
+
     hideResults();
 
     submissionConfirmation.hidden = false;

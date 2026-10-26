@@ -1,356 +1,284 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | SHIP TA Center Prototype</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-
-<body>
-
+  </head>
+  <body>
     <!-- Website announcement -->
     <div class="announcement-bar">
-        Get help during Medicare Open Enrollment.
-        <a href="https://www.shiphelp.org/">
-            Click here to learn more.
-        </a>
+      Get help during Medicare Open Enrollment.
+      <a href="https://www.shiphelp.org/"> Click here to learn more. </a>
     </div>
 
     <!-- Website header -->
     <header class="site-header">
-        <div class="header-content">
-
-            <div class="site-brand">
-                <span class="brand-name">SHIP</span>
-                <span class="brand-description">
-                    State Health Insurance Assistance Program
-                </span>
-            </div>
-
-            <nav aria-label="Main navigation">
-                <a href="https://www.shiphelp.org/">
-                    What We Do
-                </a>
-                <a href="https://www.shiphelp.org/">
-                    Blogs
-                </a>
-                <a href="https://www.shiphelp.org/">
-                    Medicare FAQ
-                </a>
-                <a href="https://www.shiphelp.org/">
-                    Volunteer
-                </a>
-                <a href="https://www.shiphelp.org/">
-                    Find Local Medicare Help
-                </a>
-            </nav>
-
+      <div class="header-content">
+        <div class="site-brand">
+          <span class="brand-name">SHIP</span>
+          <span class="brand-description">
+            State Health Insurance Assistance Program
+          </span>
         </div>
+
+        <nav aria-label="Main navigation">
+          <a href="https://www.shiphelp.org/"> What We Do </a>
+          <a href="https://www.shiphelp.org/"> Blogs </a>
+          <a href="https://www.shiphelp.org/"> Medicare FAQ </a>
+          <a href="https://www.shiphelp.org/"> Volunteer </a>
+          <a href="https://www.shiphelp.org/"> Find Local Medicare Help </a>
+        </nav>
+      </div>
     </header>
 
     <!-- Page title banner -->
     <section class="page-banner" aria-labelledby="page-title">
-        <p class="breadcrumbs">
-            HOME » WHAT WE DO » CONTACT US
-        </p>
-        <h1 id="page-title">Contact Us</h1>
+      <p class="breadcrumbs">HOME » WHAT WE DO » CONTACT US</p>
+      <h1 id="page-title">Contact Us</h1>
     </section>
 
     <!-- Main content -->
     <main>
-   
-<div class="contact-layout">
+      <div class="contact-layout">
+        <aside class="enrollment-notice" aria-labelledby="enrollment-heading">
+          <h2 id="enrollment-heading">Medicare Open Enrollment Is Here</h2>
 
-    <aside class="enrollment-notice" aria-labelledby="enrollment-heading">
-        <h2 id="enrollment-heading">
-            Medicare Open Enrollment Is Here
-        </h2>
+          <p>(October 15 – December 7)</p>
 
-        <p>(October 15 – December 7)</p>
-
-        <p>
+          <p>
             <strong>Need help comparing Medicare health or drug plans?</strong>
-            Visit our Open Enrollment resource page for tools,
-            resources, and information to help you review your options.
-        </p>
+            Visit our Open Enrollment resource page for tools, resources, and
+            information to help you review your options.
+          </p>
 
-       
-<a
-    class="enrollment-link"
-    href="https://www.shiphelp.org/open-enrollment/"
-    target="_blank"
-    rel="noopener noreferrer"
->
-    Explore Open Enrollment Resources <br>(opens in new tab)
-</a>
+          <a
+            class="enrollment-link"
+            href="https://www.shiphelp.org/open-enrollment/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore Open Enrollment Resources <br />(opens in new tab)
+          </a>
 
-<p>
-    <strong>
-        Open Enrollment is the busiest time of year
-        for SHIPs nationwide.
-    </strong>
-    Appointment availability and response times may be
-    longer than usual.
-</p>
+          <p>
+            <strong>
+              Open Enrollment is the busiest time of year for SHIPs nationwide.
+            </strong>
+            Appointment availability and response times may be longer than
+            usual.
+          </p>
 
-<p>
-    You may also contact
-    <a href="tel:18006334227">1-800-MEDICARE</a>
-    (1-800-633-4227), available 24 hours a day,
-    7 days a week, for Medicare information and assistance.
-</p>
+          <p>
+            You may also contact
+            <a href="tel:18006334227">1-800-MEDICARE</a>
+            (1-800-633-4227), available 24 hours a day, 7 days a week, for
+            Medicare information and assistance.
+          </p>
+        </aside>
 
-    </aside>
+        <div class="contact-panel">
+          <p id="decision-intro">
+            Let's find the right help for you. Answer a few quick questions to
+            get started.
+          </p>
 
-    <div class="contact-panel">
-     
-<p id="decision-intro">
-    Let's find the right help for you. Answer a few quick questions to get started.
-</p>
+          <section id="decision-tree" aria-label="Contact options">
+            <fieldset id="team-member-question">
+              <legend>Are you a SHIP team member?</legend>
 
+              <label>
+                <input type="radio" name="team-member" value="yes" />
+                Yes
+              </label>
 
-        
-<section id="decision-tree" aria-label="Contact options">
+              <label>
+                <input type="radio" name="team-member" value="no" />
+                No
+              </label>
+            </fieldset>
 
-    <fieldset id="team-member-question">
-        <legend>Are you a SHIP team member?</legend>
+            <fieldset id="inquiry-question" hidden>
+              <legend>What do you need help with?</legend>
 
-        <label>
-            <input type="radio" name="team-member" value="yes">
-            Yes
-        </label>
+              <label>
+                <input type="radio" name="inquiry-type" value="medicare" />
+                A Medicare question
+              </label>
 
-        <label>
-            <input type="radio" name="team-member" value="no">
-            No
-        </label>
-    </fieldset>
+              <label>
+                <input type="radio" name="inquiry-type" value="ship" />
+                Information about the SHIP program
+              </label>
 
-    <fieldset id="inquiry-question" hidden>
-        <legend>What do you need help with?</legend>
+              <button type="button" id="back-to-team">← Back</button>
+            </fieldset>
 
-        <label>
-            <input type="radio" name="inquiry-type" value="medicare">
-            A Medicare question
-        </label>
+            <section id="team-contact" hidden>
+              <h2 tabindex="-1">Contact the SHIP TA Center</h2>
 
-        <label>
-            <input type="radio" name="inquiry-type" value="ship">
-            Information about the SHIP program
-        </label>
-       
-<button type="button" id="back-to-team">
-    ← Back
-</button>
-    </fieldset>
+              <p>
+                Need help accessing SHIP TA Center website resources, managing
+                your website account, or receiving SHIP communications? Use the
+                form below to contact our team.
+              </p>
+            </section>
 
-    
+            <section id="public-contact" hidden>
+              <h2 tabindex="-1">Questions About the SHIP Program?</h2>
 
-<section id="team-contact" hidden>
-    <h2 tabindex="-1">Contact the SHIP TA Center</h2>
+              <p>
+                Have a question about the State Health Insurance Assistance
+                Program (SHIP), its services, or how it works? Use the form
+                below to contact the SHIP TA Center.
+              </p>
+            </section>
 
-    <p>
-        Need help accessing SHIP TA Center website resources,
-        managing your website account, or receiving SHIP
-        communications? Use the form below to contact our team.
-    </p>
-</section>
-
-
-
-    
-
-<section id="public-contact" hidden>
-    <h2 tabindex="-1">Questions About the SHIP Program?</h2>
-
-    <p>
-        Have a question about the State Health Insurance
-        Assistance Program (SHIP), its services, or how it works?
-        Use the form below to contact the SHIP TA Center.
-    </p>
-</section>
-
-
-<section id="contact-form-section" hidden>
-
-    <form id="contact-form" novalidate>
-        
-<div
-    id="form-error-summary"
-    class="form-error-summary"
-    tabindex="-1"
-    hidden
->
-    <h3 id="error-summary-heading">
-        Please correct the following fields:
-    </h3>
-    <ul id="error-summary-list"></ul>
-</div>
-
-
-        <p>Fields marked with * are required.</p>
-
-        <div class="form-field">
-            <label for="contact-name" id="name-label">
-                Name *
-            </label>
-            <input
-                type="text"
-                id="contact-name"
-                name="name"
-                autocomplete="name"
-                 aria-describedby="name-error"
-            >
-            
-<p id="name-error" class="field-error" hidden></p>
-
-        </div>
-
-        <div class="form-field">
-            <label for="contact-email">
-                Email *
-            </label>
-            <input
-                type="email"
-                id="contact-email"
-                name="email"
-                autocomplete="email"
-                required
-                aria-describedby="name-error email-error"
-            >
-            <p id="email-error" class="field-error" hidden></p>
-        </div>
-
-        <div class="form-field">
-            <label for="contact-state">
-                Location *
-            </label>
-            <select
-                id="contact-state"
-                name="state"
-                required
-                aria-describedby="state-error"
-            >
-            <p id="state-error" class="field-error" hidden></p> 
-                <option value="">Select your location</option>
-            </select>
-           
-        </div>
-
-        <div class="form-field">
-            <label for="contact-question">
-                Your question *
-            </label>
-            <textarea
-                id="contact-question"
-                name="question"
-                rows="6"
-                required
-                aria-describedby="question-error"
-            ></textarea>
-         <p id="question-error" class="field-error" hidden></p>   
-        </div>
-
-        <div id="public-acknowledgment" hidden>
-            <label for="contact-acknowledgment">
-                <input
-                    type="checkbox"
-                    id="contact-acknowledgment"
-                    name="acknowledgment"
-                    aria-describedby="acknowledgment-error"
+            <section id="contact-form-section" hidden>
+              <form id="contact-form" novalidate>
+                <div
+                  id="form-error-summary"
+                  class="form-error-summary"
+                  tabindex="-1"
+                  hidden
                 >
-                I understand that this contact option is for
-                questions about the SHIP program, not questions
-                about my personal Medicare coverage, enrollment,
-                or benefits.
-            </label>
-            
-<p id="acknowledgment-error" class="field-error" hidden></p>
+                  <h3 id="error-summary-heading">
+                    Please correct the following fields:
+                  </h3>
+                  <ul id="error-summary-list"></ul>
+                </div>
 
+                <p>Fields marked with * are required.</p>
+
+                <div class="form-field">
+                  <label for="contact-name" id="name-label"> Name * </label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    autocomplete="name"
+                    aria-describedby="name-error"
+                  />
+
+                  <p id="name-error" class="field-error" hidden></p>
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-email"> Email * </label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    aria-describedby="name-error email-error"
+                  />
+                  <p id="email-error" class="field-error" hidden></p>
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-state"> Location * </label>
+                  <select
+                    id="contact-state"
+                    name="state"
+                    required
+                    aria-describedby="state-error"
+                  >
+                    <option value="">Select your location</option>
+                  </select>
+
+                  <p id="state-error" class="field-error" hidden></p>
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-question"> Your question * </label>
+                  <textarea
+                    id="contact-question"
+                    name="question"
+                    rows="6"
+                    required
+                    aria-describedby="question-error"
+                  ></textarea>
+                  <p id="question-error" class="field-error" hidden></p>
+                </div>
+
+                <div id="public-acknowledgment" hidden>
+                  <label for="contact-acknowledgment">
+                    <input
+                      type="checkbox"
+                      id="contact-acknowledgment"
+                      name="acknowledgment"
+                      aria-describedby="acknowledgment-error"
+                    />
+                    I understand that this contact option is for questions about
+                    the SHIP program, not questions about my personal Medicare
+                    coverage, enrollment, or benefits.
+                  </label>
+
+                  <p id="acknowledgment-error" class="field-error" hidden></p>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" id="submit-button">Submit</button>
+
+                  <button type="button" class="back-button">← Back</button>
+                </div>
+              </form>
+            </section>
+
+            <!-- Submission confirmation -->
+            <section id="submission-confirmation" hidden>
+              <h2 tabindex="-1">Thank You for Your Question!</h2>
+
+              <p>
+                In the live version, your question would now be submitted to the
+                SHIP TA Center.
+              </p>
+
+              <p>
+                A team member would respond by email, usually within 1–2
+                business days.
+              </p>
+
+              <p class="prototype-notice">
+                Prototype demonstration: No message was sent.
+              </p>
+
+              <button type="button" id="start-over">Start Over</button>
+            </section>
+
+            <section id="medicare-help" hidden>
+              <h2 tabindex="-1">Get Answers to Your Medicare Questions</h2>
+
+              <p>
+                Your local SHIP provides free, unbiased Medicare counseling.
+                Find your local SHIP to get help with Medicare coverage,
+                enrollment, or benefits.
+              </p>
+
+              <!-- Keep your existing accurate link URL -->
+              <a
+                class="primary-link"
+                href="https://www.shiphelp.org/ships/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Find Local Medicare Help (opens in new tab)
+              </a>
+
+              <button type="button" class="back-button">← Back</button>
+            </section>
+          </section>
         </div>
+        <!-- Closes contact-panel -->
+      </div>
+      <!-- Closes contact-layout -->
+    </main>
 
-        <div class="form-actions">
-            
-            </button>
-
-           <button type="submit" id="submit-button">
-    Submit
-    <button type="button" class="back-button">
-                ← Back
-</button>
-        </div>
-
-    </form>
-
-</section>
-
-<!-- Submission confirmation -->
-<section id="submission-confirmation" hidden>
-    <h2 tabindex="-1">Thank You for Your Question!</h2>
-
-    <p>
-        In the live version, your question would now be
-        submitted to the SHIP TA Center.
-    </p>
-
-    <p>
-        A team member would respond by email,
-        usually within 1–2 business days.
-    </p>
-
-    <p class="prototype-notice">
-        Prototype demonstration: No message was sent.
-    </p>
-
-    <button type="button" id="start-over">
-        Start Over
-    </button>
-</section>
-
-
-
-<section id="medicare-help" hidden>
-    <h2 tabindex="-1">
-        Get Answers to Your Medicare Questions
-    </h2>
-
-    <p>
-        Your local SHIP provides free, unbiased Medicare
-        counseling. Find your local SHIP to get help with
-        Medicare coverage, enrollment, or benefits.
-    </p>
-
-    <!-- Keep your existing accurate link URL -->
-    <a
-        class="primary-link"
-        href="https://www.shiphelp.org/ships/"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        Find Local Medicare Help (opens in new tab)
-    </a>
-
-    <button type="button" class="back-button">
-        ← Back
-    </button>
-</section>
-
-
-    </section>
-
-    </div> <!-- Closes contact-panel -->
-
-</div> <!-- Closes contact-layout -->
-
-</main>
-
-<footer>
-    <!-- Website footer will go here -->
-</footer>
-
-</body>
+    <footer>
+      <!-- Website footer will go here -->
+    </footer>
+  </body>
 </html>
