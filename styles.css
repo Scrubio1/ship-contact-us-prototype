@@ -493,3 +493,12 @@ p {
   color: var(--ship-dark-blue);
   text-decoration: underline;
 }
+.medicare-alternative {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #d6d6d6;
+}
+
+.medicare-alternative h3 {
+  margin-top: 0;
+}
